@@ -26,3 +26,6 @@ print("my fav number is", x_str + ".","x = "+x_str)
 
 text = input("Type anything... ")
 print(5*text)
+
+num = int(input("Type a number... "))
+print(num*5)
