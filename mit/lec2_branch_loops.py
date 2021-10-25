@@ -1,31 +1,33 @@
-###################
-# Example: Strings#
-###################
+# ###################
+# # Example: Strings#
+# ###################
 
-hi = "Hello there"
-name = "ana"
-greet = hi + name
-print(greet)
+# hi = "Hello there"
+# name = "ana"
+# greet = hi + name
+# print(greet)
 
-greeting = hi + " " + name
-print(greeting)
+# greeting = hi + " " + name
+# print(greeting)
 
-silly = hi + (" " + name)*3
-print(silly)
+# silly = hi + (" " + name)*3
+# print(silly)
 
-###################
+# ###################
 
-x = 1
-print(x)
+# x = 1
+# print(x)
 
-x_str = str(x)
-print("my fav number is", x,".","x =",x)
-print("my fav number is", x_str + ".","x = "+x_str)
+# x_str = str(x)
+# print("my fav number is", x,".","x =",x)
+# print("my fav number is", x_str + ".","x = "+x_str)
 
-##################
+# ##################
 
-text = input("Type anything... ")
-print(5*text)
+# text = input("Type anything... ")
+# print(5*text)
 
-num = int(input("Type a number... "))
-print(num*5)
+# num = int(input("Type a number... "))
+# print(num*5)
+
+print("a">"b")
