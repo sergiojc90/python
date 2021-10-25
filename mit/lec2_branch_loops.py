@@ -66,12 +66,12 @@
 
 # Range (start,stop,step)
 
-mysum = 0
+# mysum = 0
 
-for i in range(7, 10):
-    mysum += i
+# for i in range(7, 10):
+#     mysum += i
 
-print(mysum)
+# print(mysum)
 
 mysum = 0
 for i in range(5, 11, 2):
