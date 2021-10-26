@@ -8,6 +8,11 @@
 ## Slice
 ## [start:stop:step]
 
-s = "abababab"
+# s = "abababab"
 
-print(s[::-1])
+# print(s[::-1])
+
+## Strings are immutable
+
+s = "hello"
+s[0] = "y"
