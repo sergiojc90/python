@@ -23,3 +23,15 @@
 ## has a body
 ## RETURNS something
 ##
+## FUNCTION DEFINITION
+##
+## def is_even( i ):
+## """
+## Input: i, a positive int
+## Returns True if i is even, otherwhise False
+## """
+## print("inside is_even")
+## return i%2 == 0
+##
+## FUNCTION CALL/INVOKE
+## is_even(3)
