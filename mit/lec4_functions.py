@@ -50,14 +50,26 @@
 ## x = 3
 ## z = f(x)
 
-def is_even_with_return(i):
+# def is_even_with_return(i):
+#     """
+#     Input: i, a positive int
+#     Return True if i is even, otherwise False
+#     """
+#     print("with return")
+#     remainder = i % 2
+#     return remainder == 0
+
+# is_even_with_return(3)
+# print(is_even_with_return(3))
+
+def is_even_without_return(i):
     """
     Input: i, a positive int
-    Return True if i is even, otherwise False
+    Does not return anything
     """
-    print("with return")
+    print("without return")
     remainder = i % 2
-    return remainder == 0
+    # return none
 
-is_even_with_return(3)
-print(is_even_with_return(3))
+is_even_without_return(3)
+print(is_even_without_return(3))
