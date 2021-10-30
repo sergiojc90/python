@@ -20,13 +20,13 @@
 ## for Loops Recap
 ## These two code snippets do the same thing
 
-s = "abcdefgh"
+# s = "abcdefgh"
 
-for index in range(len(s)):
-    if s[index] == "i" or s[index] == "u":
-        print("There is an i or u")
+# for index in range(len(s)):
+#     if s[index] == "i" or s[index] == "u":
+#         print("There is an i or u")
 
-## This snippet is more "pythonic"
-for char in s:
-    if char == "i" or char == "u":
-        print("There is an i or u")
+# ## This snippet is more "pythonic"
+# for char in s:
+#     if char == "i" or char == "u":
+#         print("There is an i or u")
