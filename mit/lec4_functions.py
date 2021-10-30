@@ -35,3 +35,17 @@
 ##
 ## FUNCTION CALL/INVOKE
 ## is_even(3)
+##
+## VARIABLES SCOPE
+## Scope is another word for environtment
+## - Former parameter gets bound to the value of actual parameter when function is called
+## - New scope/frame/environtment created when enter a function
+## - Scope is mapping of names to objects
+##
+## def f(x):
+##      x = x + 1
+##      print('in f(x): x = ',x)
+##      return x
+##
+## x = 3
+## z = f(x)
