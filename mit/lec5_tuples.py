@@ -29,23 +29,34 @@
 #
 ## We can iterate within a tuple
 
-def get_data(aTuple):
-    nums = ()
-    words = ()
+# def get_data(aTuple):
+#     nums = ()
+#     words = ()
 
-    for t in aTuple:
-        nums = nums + (t[0],)
-        if t[1] not in words:
-            words = words + (t[1],)
+#     for t in aTuple:
+#         nums = nums + (t[0],)
+#         if t[1] not in words:
+#             words = words + (t[1],)
 
-    min_n = min(nums)
-    max_n = max(nums)
-    unique_words = len(words)
+#     min_n = min(nums)
+#     max_n = max(nums)
+#     unique_words = len(words)
 
-    return(min_n, max_n, unique_words, words)
+#     return(min_n, max_n, unique_words, words)
 
-myTuple = ((1,"Pizza"), (2, "Burger"),(3,"Tacos"),(4,"Hotdog"),(1,"Burger"))
+# myTuple = ((1,"Pizza"), (2, "Burger"),(3,"Tacos"),(4,"Hotdog"),(1,"Burger"))
 
-(a,b,c,d) = get_data(myTuple)
+# (a,b,c,d) = get_data(myTuple)
 
-print("Min number:",a,"Max number:",b,"There are",c,"unique words"," The list of unique words is",d)
+# print("Min number:",a,"Max number:",b,"There are",c,"unique words"," The list of unique words is",d)
+
+## LISTS
+## Like tuples, they can contain any kind of data type, but they are MUTABLE
+
+a_list = []
+L = [2,"a",4,[1,2]]
+
+print(len(L), L[0],L[2]+1,L[3])
+
+i = 2
+print(L[i-1])
