@@ -108,17 +108,32 @@
 ## - if element occurs multiple times, removes first occurence
 ## - if element not in list, gives an error
 
-L = [2,1,3,6,3,7,0] # do below in order
+# L = [2,1,3,6,3,7,0] # do below in order
 
-L.remove(2) # Mutates L
+# L.remove(2) # Mutates L
+# print(L)
+
+# L.remove(3)
+# print(L)
+
+# del(L[1])
+# print(L)
+
+# L.pop()
+# print(L)
+
+## CONVERT LISTS TO STRINGS AND BACK
+## Can use s.split(), to split a string on a character parameter, splits on spaces if called without parameter
+## use ''.join(L) to turn a list of characters into a string, can give a character in quotes to add char between every element
+
+s = "I<3 cs"
+
+print(s.split())
+
+L = ["a", "b", "c"]
+
+print("".join(L))
+
+print(" ".join(L))
+
 print(L)
-
-L.remove(3)
-print(L)
-
-del(L[1])
-print(L)
-
-L.pop()
-print(L)
-
