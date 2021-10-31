@@ -46,4 +46,6 @@ def get_data(aTuple):
 
 myTuple = ((1,"Pizza"), (2, "Burger"),(3,"Tacos"),(4,"Hotdog"),(1,"Burger"))
 
-print(get_data(myTuple))
+(a,b,c,d) = get_data(myTuple)
+
+print("Min number:",a,"Max number:",b,"There are",c,"unique words"," The list of unique words is",d)
