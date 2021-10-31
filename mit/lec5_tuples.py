@@ -13,4 +13,7 @@
 ## An ordered sequence of elements, can mix element types cannot change element values, immutable represented with parenthesis
 te = () # Empty tuple
 t = (2,"mit",3)
-t[0]
+print(t+(5,6))
+print(te)
+print(len(t))
+t[1] = 4
