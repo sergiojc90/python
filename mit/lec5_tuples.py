@@ -109,11 +109,16 @@
 ## - if element not in list, gives an error
 
 L = [2,1,3,6,3,7,0] # do below in order
+
 L.remove(2) # Mutates L
 print(L)
+
 L.remove(3)
 print(L)
+
 del(L[1])
 print(L)
+
 L.pop()
 print(L)
+
