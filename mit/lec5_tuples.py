@@ -126,14 +126,31 @@
 ## Can use s.split(), to split a string on a character parameter, splits on spaces if called without parameter
 ## use ''.join(L) to turn a list of characters into a string, can give a character in quotes to add char between every element
 
-s = "I<3 cs"
+# s = "I<3 cs"
 
-print(s.split())
+# print(s.split())
 
-L = ["a", "b", "c"]
+# L = ["a", "b", "c"]
 
-print("".join(L))
+# print("".join(L))
 
-print(" ".join(L))
+# print(" ".join(L))
 
+# print(L)
+
+## Sorting and reversing lists
+## L.sort() MUTATES the list, L.reverse() aslo MUTATES the list,
+## sorted(L) returns sorted list, does not mutate L
+
+L = [9,6,0,3]
+
+print(sorted(L))
+print(L)
+
+print(L.sort())
+print(L)
+
+L = [9,6,0,3]
+
+print(L.reverse())
 print(L)
