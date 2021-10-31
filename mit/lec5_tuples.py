@@ -72,9 +72,30 @@ L = [1,2,3]
 ## Compute the sum of elements of a list
 ## common pattern, iterate over list elements
 
-total = 0
+# total = 0
 
-for i in L:
-    total += i
+# for i in L:
+#     total += i
 
-print(total)
+# print(total)
+
+## Operations on lists - ADD
+## add elements to end of list with L.append(element)
+## MUTATES THE LIST!
+
+L.append(1) #this mutates the list
+
+print(L)
+
+## to combine lists together use concatenation, + operator, to give you a NEW list
+## mutate list with L.extend(some_list)
+
+L1 = [2,1,3]
+L2 = [4,5,6]
+L3 = L1 + L2
+
+print(L3)
+print(L1)
+print(L2)
+L1.extend([0,6])
+print(L1)
