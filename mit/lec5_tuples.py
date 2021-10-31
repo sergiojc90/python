@@ -61,41 +61,59 @@
 # i = 2
 # print(L[i-1])
 
-## Lists are mutable
-L = [1,2,3]
+# ## Lists are mutable
+# L = [1,2,3]
 
-# L[1] = 5 #This changes the L[1] value, it does not creates a new variable.
+# # L[1] = 5 #This changes the L[1] value, it does not creates a new variable.
+
+# # print(L)
+
+# ## Iterating  over a List
+# ## Compute the sum of elements of a list
+# ## common pattern, iterate over list elements
+
+# # total = 0
+
+# # for i in L:
+# #     total += i
+
+# # print(total)
+
+# ## Operations on lists - ADD
+# ## add elements to end of list with L.append(element)
+# ## MUTATES THE LIST!
+
+# L.append(1) #this mutates the list
 
 # print(L)
 
-## Iterating  over a List
-## Compute the sum of elements of a list
-## common pattern, iterate over list elements
+# ## to combine lists together use concatenation, + operator, to give you a NEW list
+# ## mutate list with L.extend(some_list)
 
-# total = 0
+# L1 = [2,1,3]
+# L2 = [4,5,6]
+# L3 = L1 + L2
 
-# for i in L:
-#     total += i
+# print(L3)
+# print(L1)
+# print(L2)
+# L1.extend([0,6])
+# print(L1)
 
-# print(total)
+## Operations on lists - REMOVE
+## Delete element at a specific index with del(L[index])
+## Remove element at end of list with L.pop(), returns the removed element
+## Remove a specific element with L.remove(element)
+## - looks for the element and removes it
+## - if element occurs multiple times, removes first occurence
+## - if element not in list, gives an error
 
-## Operations on lists - ADD
-## add elements to end of list with L.append(element)
-## MUTATES THE LIST!
-
-L.append(1) #this mutates the list
-
+L = [2,1,3,6,3,7,0] # do below in order
+L.remove(2) # Mutates L
 print(L)
-
-## to combine lists together use concatenation, + operator, to give you a NEW list
-## mutate list with L.extend(some_list)
-
-L1 = [2,1,3]
-L2 = [4,5,6]
-L3 = L1 + L2
-
-print(L3)
-print(L1)
-print(L2)
-L1.extend([0,6])
-print(L1)
+L.remove(3)
+print(L)
+del(L[1])
+print(L)
+L.pop()
+print(L)
