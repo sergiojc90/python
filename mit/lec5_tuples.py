@@ -53,10 +53,28 @@
 ## LISTS
 ## Like tuples, they can contain any kind of data type, but they are MUTABLE
 
-a_list = []
-L = [2,"a",4,[1,2]]
+# a_list = []
+# L = [2,"a",4,[1,2]]
 
-print(len(L), L[0],L[2]+1,L[3])
+# print(len(L), L[0],L[2]+1,L[3])
 
-i = 2
-print(L[i-1])
+# i = 2
+# print(L[i-1])
+
+## Lists are mutable
+L = [1,2,3]
+
+# L[1] = 5 #This changes the L[1] value, it does not creates a new variable.
+
+# print(L)
+
+## Iterating  over a List
+## Compute the sum of elements of a list
+## common pattern, iterate over list elements
+
+total = 0
+
+for i in L:
+    total += i
+
+print(total)
