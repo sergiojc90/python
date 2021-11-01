@@ -158,13 +158,24 @@
 ## ALIASES
 ## hot is an alias for warm - changing one changes the other!!!
 ## append() has a side effect
-a = 1
-b = 1
-print(a)
-print(b)
+# a = 1
+# b = 1
+# print(a)
+# print(b)
 
-warm = ["red", "yellow", "orange"]
-hot = warm
-hot.append("pink")
-print(hot)
-print(warm)
+# warm = ["red", "yellow", "orange"]
+# hot = warm
+# hot.append("pink")
+# print(hot)
+# print(warm)
+
+## Cloning a list
+## create a new list and copy every element using
+## chill = cool[:] #from 0 to leng(cool)
+
+cool = ["blue", "green","grey"]
+chill = cool[:]
+chill.append("black")
+print(chill)
+print(cool)
+
