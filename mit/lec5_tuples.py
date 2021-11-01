@@ -173,9 +173,20 @@
 ## create a new list and copy every element using
 ## chill = cool[:] #from 0 to leng(cool)
 
-cool = ["blue", "green","grey"]
-chill = cool[:]
-chill.append("black")
-print(chill)
-print(cool)
+# cool = ["blue", "green","grey"]
+# chill = cool[:]
+# chill.append("black")
+# print(chill)
+# print(cool)
 
+## SORTING LISTS
+
+warm = ["red", "yellow", "orange"]
+sortedwarm = warm.sort()
+print(warm)
+print(sortedwarm)
+
+cool = ["grey", "green", "blue"]
+sortedcool = sorted(cool)
+print(cool)
+print(sortedcool)
