@@ -142,15 +142,29 @@
 ## L.sort() MUTATES the list, L.reverse() aslo MUTATES the list,
 ## sorted(L) returns sorted list, does not mutate L
 
-L = [9,6,0,3]
+# L = [9,6,0,3]
 
-print(sorted(L))
-print(L)
+# print(sorted(L))
+# print(L)
 
-print(L.sort())
-print(L)
+# print(L.sort())
+# print(L)
 
-L = [9,6,0,3]
+# L = [9,6,0,3]
 
-print(L.reverse())
-print(L)
+# print(L.reverse())
+# print(L)
+
+## ALIASES
+## hot is an alias for warm - changing one changes the other!!!
+## append() has a side effect
+a = 1
+b = 1
+print(a)
+print(b)
+
+warm = ["red", "yellow", "orange"]
+hot = warm
+hot.append("pink")
+print(hot)
+print(warm)
