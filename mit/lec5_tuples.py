@@ -181,12 +181,34 @@
 
 ## SORTING LISTS
 
-warm = ["red", "yellow", "orange"]
-sortedwarm = warm.sort()
-print(warm)
-print(sortedwarm)
+# warm = ["red", "yellow", "orange"]
+# sortedwarm = warm.sort()
+# print(warm)
+# print(sortedwarm)
 
-cool = ["grey", "green", "blue"]
-sortedcool = sorted(cool)
-print(cool)
-print(sortedcool)
+# cool = ["grey", "green", "blue"]
+# sortedcool = sorted(cool)
+# print(cool)
+# print(sortedcool)
+
+## MUTATION AND ITERATION
+## AVOID MUTATING A LIST AS YOU ARE ITERATING OVER IT
+
+# def remove_dups(L1,L2):
+#     for e in L1:
+#         if e in L2:
+#             L1.remove(e)
+# L1 = [1,2,3,4]
+# L2 = [1,2,5,6]
+# remove_dups(L1,L2)
+
+# print(L1) ## This does not work because as you iterate thruough the list, the lenght of the list does not update when you remove an item
+
+## To fix this you need to create a clone first.
+
+def remove_dups_clone(L1,L2):
+    L1_copy = L1[:]
+    for e in L1_copy:
+        if e in L2:
+            L1.remove(e)
+print(L1)
