@@ -94,3 +94,13 @@ my_dic = {} # Empty dictionary
 grades = {"Ana":"B", "John":"A+", "Denise":"A"}
 
 print(grades["John"])
+
+grades["Elvia"] = "W" # We can Add Key-Value pairs
+"Elvia" in grades # Test if the key exist in the dictionary
+del(grades["Ana"]) # Delete key-value pair
+
+grades.keys() # Returns the keys, not necesary in order
+grades.values() # Returns the values
+
+# The values can be anything list, other data structures, other dictionaries, etc.
+# The keys need to be unique and inmutable [int, string, float(not recomended)]
