@@ -19,26 +19,39 @@
 ## MULTIPLICATION - ITERATIVE SOLUTION
 ## "multiply a*b" is equivalent to "add a to itself b times"
 
-def mult_iter(a,b):
-    result = 0
+# def mult_iter(a,b):
+#     result = 0
 
-    while b>0:
-        result += a
-        b -= 1
-    return result
+#     while b>0:
+#         result += a
+#         b -= 1
+#     return result
 
-## MULTIPLICATION - RECURSIVE SOLUTION
+# ## MULTIPLICATION - RECURSIVE SOLUTION
 
-def mult(a,b):
-    if b == 1:
-        return a # This is the base case, to avoid infinite recurtion.
-    else:
-        return a + mult(a,b-1)
+# def mult(a,b):
+#     if b == 1:
+#         return a # This is the base case, to avoid infinite recurtion.
+#     else:
+#         return a + mult(a,b-1)
 
-## FACTORIAL
+# ## FACTORIAL
 
-def fact(n):
+# def fact(n):
+#     if n == 1:
+#         return 1
+#     else:
+#         return n*fact(n-1)
+
+## TOWERS OF HANOI
+
+def printMove(fr,to):
+    print("move from" + str(str) + "to" + str(to))
+
+def Towers(n, fr, to, spare):
     if n == 1:
-        return 1
+        printMove(fr,to)
     else:
-        return n*fact(n-1)
+        Towers(n-1, fr, spare, to)
+        Towers(1, fr, to, spare)
+        Towers(n-1, spare, to, fr)
