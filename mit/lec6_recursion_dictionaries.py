@@ -34,3 +34,11 @@ def mult(a,b):
         return a # This is the base case, to avoid infinite recurtion.
     else:
         return a + mult(a,b-1)
+
+## FACTORIAL
+
+def fact(n):
+    if n == 1:
+        return 1
+    else:
+        return n*fact(n-1)
