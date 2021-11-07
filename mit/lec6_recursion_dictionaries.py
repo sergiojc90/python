@@ -26,3 +26,11 @@ def mult_iter(a,b):
         result += a
         b -= 1
     return result
+
+## MULTIPLICATION - RECURSIVE SOLUTION
+
+def mult(a,b):
+    if b == 1:
+        return a # This is the base case, to avoid infinite recurtion.
+    else:
+        return a + mult(a,b-1)
