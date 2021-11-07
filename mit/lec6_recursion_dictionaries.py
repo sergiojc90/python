@@ -45,13 +45,26 @@
 
 ## TOWERS OF HANOI
 
-def printMove(fr,to):
-    print("move from" + str(str) + "to" + str(to))
+# def printMove(fr,to):
+#     print("move from" + str(str) + "to" + str(to))
 
-def Towers(n, fr, to, spare):
-    if n == 1:
-        printMove(fr,to)
+# def Towers(n, fr, to, spare):
+#     if n == 1:
+#         printMove(fr,to)
+#     else:
+#         Towers(n-1, fr, spare, to)
+#         Towers(1, fr, to, spare)
+#         Towers(n-1, spare, to, fr)
+
+## RECURTION WITH MULTIPLE BASE CASES
+## Fibonacci
+
+def fib(x):
+    """
+        assumes x an int >= 0
+        returns Fibonacci of x
+    """
+    if x == 0 or x == 1:
+        return 1
     else:
-        Towers(n-1, fr, spare, to)
-        Towers(1, fr, to, spare)
-        Towers(n-1, spare, to, fr)
+        return fib(x-1) + fib(x-2)
