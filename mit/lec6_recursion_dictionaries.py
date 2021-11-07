@@ -59,12 +59,30 @@
 ## RECURTION WITH MULTIPLE BASE CASES
 ## Fibonacci
 
-def fib(x):
-    """
-        assumes x an int >= 0
-        returns Fibonacci of x
-    """
-    if x == 0 or x == 1:
-        return 1
-    else:
-        return fib(x-1) + fib(x-2)
+# def fib(x):
+#     """
+#         assumes x an int >= 0
+#         returns Fibonacci of x
+#     """
+#     if x == 0 or x == 1:
+#         return 1
+#     else:
+#         return fib(x-1) + fib(x-2)
+
+## PALINDROME
+
+def isPalindrome(s):
+    def toChars(s):
+        s = s.lower()
+        ans = ""
+        for c in s:
+            if c in "abcdefghijklmnopqrstuvwxyz":
+                ans = ans + c
+        return ans
+
+    def isPal(s):
+        if len(s) <= 1:
+            return True
+        else:
+            return s[0] == s[-1] and isPal(s[1:-1])
+    return isPal(toChars(s))
