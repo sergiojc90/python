@@ -59,3 +59,15 @@
 ### - form hypothesis
 ### - repeatable experiments
 ### - pick simplest input to test with
+### 
+### Python Error Handling
+
+try:
+    a = int(input("Tell me one number:"))
+    b = int(input("Tell me another number"))
+    print(a/b)
+except:
+    print("Bug in user input.")
+
+### Exceptions raised by any statement in body of try are handled by the except statement
+### and execution continues with the body of the except statement
