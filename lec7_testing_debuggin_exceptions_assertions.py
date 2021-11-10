@@ -71,3 +71,11 @@ except:
 
 ### Exceptions raised by any statement in body of try are handled by the except statement
 ### and execution continues with the body of the except statement
+
+### else:
+### - body of this is executed when execution of associated try body completes with no exceptions
+
+### finally:
+### - body of this is always executed after try, else and except clauses, wven if they raised another error
+### and executed a break, continue or return
+### -  useful for clean up code that should be run no matter what else happened (e.g. close a file)
