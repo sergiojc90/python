@@ -79,3 +79,10 @@ except:
 ### - body of this is always executed after try, else and except clauses, wven if they raised another error
 ### and executed a break, continue or return
 ### -  useful for clean up code that should be run no matter what else happened (e.g. close a file)
+
+### Asert Statement
+### Used to make sure that the assumptions of computations are exactly what they are expected to be
+
+def avg(grades):
+    assert not len(grades) == 0, "no grades data"
+    return sum (grades/len(grades))
