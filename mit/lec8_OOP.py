@@ -81,3 +81,12 @@ c = Coordinate(3,4)
 origin = Coordinate(0,0)
 print(c.x)
 print(origin.x)
+
+# How to use a method
+# 1) Conventional way
+
+print(c.distance(origin))
+
+# 2) Implicit method
+
+print(Coordinate.distance(c,origin))
