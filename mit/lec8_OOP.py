@@ -45,3 +45,15 @@
 ### - the word object means that Coordinate is a python object and inherits all its attributes (inheritance next lecture)
 ### - Coordinate is a subclass of OBJECT
 ### - OBJECT is a superclasss of Coordinate
+###
+### WHAT ARE ATTRIBUTES?
+###
+### Data and procedures that "belong" to the class
+### 
+### Data attributes
+### - think of data as other object that make up the class
+### - for example, a coordinate is made up of two numbers
+###
+### Methods (procedural attributes)
+### - Think of methods as functions that only work with this class
+### - How to interact with the object
