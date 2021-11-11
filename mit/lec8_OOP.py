@@ -57,3 +57,13 @@
 ### Methods (procedural attributes)
 ### - Think of methods as functions that only work with this class
 ### - How to interact with the object
+###
+### DEFINING HOW TO CREATE AN INSTANCE OF A CLASS
+###
+### - First have to define how to increase an instance of object
+### - Use a special method called __init__ to initialize some data attributes
+
+class Coordinate(object):
+    def __init__ (self, x, y):
+        self.x = x
+        self.y = y
