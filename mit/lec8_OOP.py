@@ -34,3 +34,14 @@
 ### - Creating new instances of objects
 ### - Doing operations on the instances
 ### - for example, L=[1,2] and len(L)
+###
+### DEFINE YOUR OWN TYPES
+### - Use the class keyword to define a new type
+###
+### class Coordinate(object):
+###     #define attributes here
+###
+### - similar to def, indent code to indicate which statements are part of the class definition
+### - the word object means that Coordinate is a python object and inherits all its attributes (inheritance next lecture)
+### - Coordinate is a subclass of OBJECT
+### - OBJECT is a superclasss of Coordinate
