@@ -67,6 +67,10 @@ class Coordinate(object):
     def __init__ (self, x, y):
         self.x = x
         self.y = y
+    ## Defining a __str__ method for printing
+
+    def __str__(self):
+        return "<"+str(self.x)+","+str(self.y)+">"
     
     ## Defining a method for the coordinate object
 
