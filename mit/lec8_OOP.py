@@ -82,17 +82,35 @@ class Coordinate(object):
 
 
 c = Coordinate(3,4)
-origin = Coordinate(0,0)
-print(c.x)
-print(origin.x)
+# origin = Coordinate(0,0)
+# print(c.x)
+# print(origin.x)
 
-# How to use a method
-# 1) Conventional way
+# # How to use a method
+# # 1) Conventional way
 
-print(c.distance(origin))
+# print(c.distance(origin))
 
-# 2) Implicit method
+# # 2) Implicit method
 
-print(Coordinate.distance(c,origin))
+# print(Coordinate.distance(c,origin))
 
-print(c) # If you try to print this, it will
+# print(c) # If you try to print this it will show you the type of the object (type object... Daah) and the memory store location.
+
+## WRAPING YOUR HEAD AROUND TYPES AND CLASSES
+
+print(c) # This will print <3,4>
+print(type(c)) # The type of object c is a class Coordinate
+print(Coordinate) # A coordinate is a class
+print(type(Coordinate)) # A coordinate class is a type of object
+
+## SPECIAL OPERATORS
+## +,-,==,<,>,len(),print, and many others
+## like print, can override these to work with your class
+
+# __add__(self,other) -> self + other
+# __sub__(self,other) -> self - other
+# __eq__(self,other) -> self == other
+# __lt__(self,other) -> self < other
+# __len__(sefl) len(self)
+# __str__(self) print self
