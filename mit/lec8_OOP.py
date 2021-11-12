@@ -139,3 +139,9 @@ class Fraction(object):
 
     def inverse(self):
         return Fraction(self.denom/self.num)
+
+
+a = Fraction(1,4)
+b = Fraction(3,4)
+
+c = a + b
