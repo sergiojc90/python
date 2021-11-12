@@ -90,3 +90,5 @@ print(c.distance(origin))
 # 2) Implicit method
 
 print(Coordinate.distance(c,origin))
+
+print(c) # If you try to print this, it will
