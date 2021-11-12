@@ -63,25 +63,25 @@
 ### - First have to define how to increase an instance of object
 ### - Use a special method called __init__ to initialize some data attributes
 
-class Coordinate(object):
-    def __init__ (self, x, y):
-        self.x = x
-        self.y = y
-    ## Defining a __str__ method for printing
+# class Coordinate(object):
+#     def __init__ (self, x, y):
+#         self.x = x
+#         self.y = y
+#     ## Defining a __str__ method for printing
 
-    def __str__(self):
-        return "<"+str(self.x)+","+str(self.y)+">"
+#     def __str__(self):
+#         return "<"+str(self.x)+","+str(self.y)+">"
     
-    ## Defining a method for the coordinate object
+#     ## Defining a method for the coordinate object
 
-    def distance(self,other):
-        x_diff_sq = (self.x - other.x)**2
-        y_diff_sq = (self.y - other.y)**2
-        return (x_diff_sq + y_diff_sq)**0.5
+#     def distance(self,other):
+#         x_diff_sq = (self.x - other.x)**2
+#         y_diff_sq = (self.y - other.y)**2
+#         return (x_diff_sq + y_diff_sq)**0.5
 
 
 
-c = Coordinate(3,4)
+# c = Coordinate(3,4)
 # origin = Coordinate(0,0)
 # print(c.x)
 # print(origin.x)
@@ -99,10 +99,10 @@ c = Coordinate(3,4)
 
 ## WRAPING YOUR HEAD AROUND TYPES AND CLASSES
 
-print(c) # This will print <3,4>
-print(type(c)) # The type of object c is a class Coordinate
-print(Coordinate) # A coordinate is a class
-print(type(Coordinate)) # A coordinate class is a type of object
+# print(c) # This will print <3,4>
+# print(type(c)) # The type of object c is a class Coordinate
+# print(Coordinate) # A coordinate is a class
+# print(type(Coordinate)) # A coordinate class is a type of object
 
 ## SPECIAL OPERATORS
 ## +,-,==,<,>,len(),print, and many others
@@ -114,3 +114,28 @@ print(type(Coordinate)) # A coordinate class is a type of object
 # __lt__(self,other) -> self < other
 # __len__(sefl) len(self)
 # __str__(self) print self
+
+class Fraction(object):
+    def __init__(self, num, denom):
+        assert type(num) == int and type(denom) == num
+        self.num = num
+        self.denom = denom
+
+    def __str__(self):
+        return str(self.num) + "/" + str(self.denom)
+
+    def __add__(self,other):
+        top = self.num*other.denom + self.denom*other.num
+        bott = self.denom*other.denom
+        return Fraction(top,bott)
+    
+    def __sub__(self,other):
+        top = self.num*other.denom - self.denom*other.num
+        bott = self.denomb*other.denom
+        return Fraction(top, bott)
+
+    def __float__(self):
+        return self.num/self.denom
+
+    def inverse(self):
+        return Fraction(self.denom/self.num)
