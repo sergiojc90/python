@@ -94,3 +94,12 @@ a.get_age
 ##      self.name = newname
 ##
 ## default argument used here
+##
+## HIERARCHIES
+## 
+## Parent class (superclass)
+## Child class (subclass)
+## - Inherits all data and behaviors of parent class
+## - add more info
+## - add more behavior
+## - Override behavior
