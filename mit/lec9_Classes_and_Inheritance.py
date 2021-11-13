@@ -73,3 +73,15 @@ a.get_age
 ## - good style
 ## - easy to mantain code
 ## - prevent bugs
+
+## PYTHON NOT GREAT AT INFORMATION HIDING
+## - Allows you to acces data from outside class definition
+## print(a.age)
+## 
+## - Allows you to write data from outside class definition
+## a.age = "infinite"
+## 
+## - Allows you to create data attributes for an instance from outside class definition
+## a.size = "tiny"
+##
+## It is not good style to do any of these!
