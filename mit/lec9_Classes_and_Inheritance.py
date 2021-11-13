@@ -85,3 +85,12 @@ a.get_age
 ## a.size = "tiny"
 ##
 ## It is not good style to do any of these!
+##
+## DEFAULT ARGUMENTS
+##
+## Default arguments for formal parameters are used if no actual argument is given
+##
+## def set_name(self, newname=""):
+##      self.name = newname
+##
+## default argument used here
