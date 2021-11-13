@@ -154,3 +154,18 @@ class Studen(Person):
             print("I am watching TV")
     def __str__(self):
         return "student:" + str(self.name)+ ":" + str(self.age) + ":" + str(self.major)
+
+## CLASS VARIABLES AND THE Rabbit SUBCLASS
+##
+## Class variables and their values are shared between all instances of a class
+
+class Rabbit(Animal):
+    tag = 1
+    def __init__(self, age, parent1 = None, parent2 = None):
+        Animal.__init__(self, age)
+        self.parent1 = parent1
+        self.parent2 = parent2
+        self.rid = Rabbit.tag
+        Rabbit.tag += 1
+
+## tag used to give unique id to each new rabbit instance
