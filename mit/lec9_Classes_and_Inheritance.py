@@ -160,7 +160,9 @@ class Studen(Person):
 ## Class variables and their values are shared between all instances of a class
 
 class Rabbit(Animal):
-    tag = 1
+    
+    tag = 1 ## defined inside class definition but outside of the __init__
+
     def __init__(self, age, parent1 = None, parent2 = None):
         Animal.__init__(self, age)
         self.parent1 = parent1
