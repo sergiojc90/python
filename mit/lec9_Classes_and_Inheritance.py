@@ -103,3 +103,15 @@ a.get_age
 ## - add more info
 ## - add more behavior
 ## - Override behavior
+
+class Cat(Animal):
+    def speak(self):
+        print("meow")
+    def __str__(self):
+        return "cat:" + str(self.name) + ":" + str(self.age)
+
+## Add new functionality with speak()
+## - instance of type Cat can be called with new methods
+## - instance of type Animal throws error if called with Cat's new method
+
+## __init__ is not missing, uses the Animal version
