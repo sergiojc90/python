@@ -32,3 +32,8 @@
 ### c2 = Coordinate(3,4)
 
 ### c1 and c2 have different data attribute values c1.x and c2.x because they are different objects
+
+### GETTER AND SETTER METHODS
+### Getters return the values of any of the data attributes
+### Setters set the data attributes to whatever is set in
+
