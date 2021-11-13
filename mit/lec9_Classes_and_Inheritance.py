@@ -56,3 +56,20 @@ class Animal(object):
     
     def __str__(self):
         return "Animal:" + str(self.name) + ":" + str(self.age)
+
+# You should implement setters and getters in your classes
+
+a = Animal(3)
+
+# The two lines below print the same, however, the first one is not recommeded
+a.age
+a.get_age
+
+## INFORMATION HIDING
+## Author of class definition may change data attribute variables names
+## If you are accessing data attributes outside the class and class definition changes, may get errors
+
+## Outside of class, use getters and setter instead, use a.get_age() NOT a.age
+## - good style
+## - easy to mantain code
+## - prevent bugs
